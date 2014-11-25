@@ -36,8 +36,8 @@ Thumbs.db
 
 
 # Dont know why this guy wanted to ignore these two, pretty important if you ask me
-*.sln
-*.csproj
+#*.sln
+#*.csproj
 
 #we use a "master" solution that isnt generated or touched by Unity
 !*master.sln

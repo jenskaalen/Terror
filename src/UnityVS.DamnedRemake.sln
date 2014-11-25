@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.DamnedRemake.CSharp", "UnityVS.DamnedRemake.CSharp.csproj", "{0BA53C0A-E3F9-04D4-D3A3-70218A08F586}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.DamnedRemake.CSharp.Editor", "UnityVS.DamnedRemake.CSharp.Editor.csproj", "{460742EC-CE1B-0CE6-ED72-81EB6B1A5496}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.DamnedRemake.CSharp.Plugins", "UnityVS.DamnedRemake.CSharp.Plugins.csproj", "{B7F6E4B4-F34B-D050-481F-BE24CFC3CF00}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0BA53C0A-E3F9-04D4-D3A3-70218A08F586}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BA53C0A-E3F9-04D4-D3A3-70218A08F586}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BA53C0A-E3F9-04D4-D3A3-70218A08F586}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BA53C0A-E3F9-04D4-D3A3-70218A08F586}.Release|Any CPU.Build.0 = Release|Any CPU
+		{460742EC-CE1B-0CE6-ED72-81EB6B1A5496}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{460742EC-CE1B-0CE6-ED72-81EB6B1A5496}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{460742EC-CE1B-0CE6-ED72-81EB6B1A5496}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{460742EC-CE1B-0CE6-ED72-81EB6B1A5496}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7F6E4B4-F34B-D050-481F-BE24CFC3CF00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7F6E4B4-F34B-D050-481F-BE24CFC3CF00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7F6E4B4-F34B-D050-481F-BE24CFC3CF00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7F6E4B4-F34B-D050-481F-BE24CFC3CF00}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
