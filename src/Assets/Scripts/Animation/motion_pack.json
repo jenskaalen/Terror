@@ -1,0 +1,155 @@
+{
+  "name": "Basic Locomotion Pack",
+  "root_path": "mixamorig:Hips",
+  "clips": [
+    {
+      "name": "idle",
+      "anim_name": "idle",
+      "type": "normal",
+      "root_motion_translation": ""
+    },
+    {
+      "name": "walk",
+      "anim_name": "walking",
+      "type": "normal",
+      "root_motion_translation": "z"
+    },
+    {
+      "name": "jump",
+      "anim_name": "jump",
+      "type": "normal",
+      "root_motion_translation": ""
+    },
+    {
+      "name": "walk_strafe_right",
+      "anim_name": "right_strafe_walking",
+      "type": "normal",
+      "root_motion_translation": "x"
+    },
+    {
+      "name": "walk_strafe_left",
+      "anim_name": "left_strafe_walking",
+      "type": "normal",
+      "root_motion_translation": "x"
+    },
+    {
+      "name": "turn_left",
+      "anim_name": "left_turn",
+      "type": "normal",
+      "root_motion_translation": ""
+    },
+    {
+      "name": "turn_right",
+      "anim_name": "right_turn",
+      "type": "normal",
+      "root_motion_translation": ""
+    }
+  ],
+  "layers": [
+    {
+      "name": "full body",
+      "priority": 1,
+      "states": [
+        {
+          "name": "idle",
+          "tree": {
+            "type": "clip",
+            "name": "idle"
+          },
+          "transitions": [
+            {
+              "destination": "*",
+              "type": "crossfade",
+              "duration": 0.3
+            }
+          ]
+        },
+        {
+          "name": "move",
+          "tree": {
+            "type": "clip",
+            "name": "walk"
+          },
+          "transitions": [
+            {
+              "destination": "*",
+              "type": "crossfade",
+              "duration": 0.2
+            }
+          ]
+        },
+        {
+          "name": "jump",
+          "is_looping": false,
+          "tree": {
+            "type": "clip",
+            "name": "jump"
+          },
+          "transitions": [
+            {
+              "destination": "*",
+              "type": "crossfade",
+              "duration": 0.3
+            }
+          ]
+        },
+        {
+          "name": "walk_strafe_left",
+          "tree": {
+            "type": "clip",
+            "name": "walk_strafe_left"
+          },
+          "transitions": [
+            {
+              "destination": "*",
+              "type": "crossfade",
+              "duration": 0.3
+            }
+          ]
+        },
+        {
+          "name": "walk_strafe_right",
+          "tree": {
+            "type": "clip",
+            "name": "walk_strafe_right"
+          },
+          "transitions": [
+            {
+              "destination": "*",
+              "type": "crossfade",
+              "duration": 0.3
+            }
+          ]
+        },
+        {
+          "name": "turn_left",
+          "tree": {
+            "type": "clip",
+            "name": "turn_left"
+          },
+          "transitions": [
+            {
+              "destination": "*",
+              "type": "crossfade",
+              "duration": 0.3
+            }
+          ]
+        },
+        {
+          "name": "turn_right",
+          "tree": {
+            "type": "clip",
+            "name": "turn_right"
+          },
+          "transitions": [
+            {
+              "destination": "*",
+              "type": "crossfade",
+              "duration": 0.3
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
