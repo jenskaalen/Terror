@@ -32,22 +32,34 @@ public class DoorBehaviour : MonoBehaviour
     }
 
     [RPC]
-    public void S_Open()
+    public void S_Interact_Door()
     {
         if (StateIsChanging)
             return;
 
-        networkView.RPC("Open", RPCMode.All, true, 0.75f);
+        if (IsClosed)
+            networkView.RPC("Open", RPCMode.All, true, 0.75f);
+        else
+            networkView.RPC("Close", RPCMode.All, true, 0.75f);
     }
 
-    [RPC]
-    public void S_Close()
-    {
-        if (StateIsChanging)
-            return;
+    //[RPC]
+    //public void S_Open()
+    //{
+    //    if (StateIsChanging)
+    //        return;
 
-        networkView.RPC("Close", RPCMode.All, true, 0.75f);
-    }
+    //    networkView.RPC("Open", RPCMode.All, true, 0.75f);
+    //}
+
+    //[RPC]
+    //public void S_Close()
+    //{
+    //    if (StateIsChanging)
+    //        return;
+
+    //    networkView.RPC("Close", RPCMode.All, true, 0.75f);
+    //}
 
     [RPC]
     public void Open()

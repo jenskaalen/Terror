@@ -1,108 +1,112 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-	<ProductVersion>10.0.20506</ProductVersion>
-	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{20E79F52-DE5C-D1D8-AE85-0E0B57B3D9D3}</ProjectGuid>
-	<OutputType>Library</OutputType>
-	<AppDesignerFolder>Properties</AppDesignerFolder>
-	<RootNamespace></RootNamespace>
-	<AssemblyName>Assembly-CSharp</AssemblyName>
-	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
-	<FileAlignment>512</FileAlignment>
-	<BaseDirectory>Assets</BaseDirectory>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{20E79F52-DE5C-D1D8-AE85-0E0B57B3D9D3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>
+    </RootNamespace>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-	<DebugSymbols>true</DebugSymbols>
-	<DebugType>full</DebugType>
-	<Optimize>false</Optimize>
-	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_4_5_5;UNITY_4_5;UNITY_WEBPLAYER;WEBPLUG;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE;1</DefineConstants>
-	<ErrorReport>prompt</ErrorReport>
-	<WarningLevel>4</WarningLevel>
-	<NoWarn>0169</NoWarn>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_4_5_5;UNITY_4_5;UNITY_WEBPLAYER;WEBPLUG;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE;1</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-	<DebugType>pdbonly</DebugType>
-	<Optimize>true</Optimize>
-	<OutputPath>Temp\bin\Release\</OutputPath>
-	<DefineConstants>TRACE</DefineConstants>
-	<ErrorReport>prompt</ErrorReport>
-	<WarningLevel>4</WarningLevel>
-	<NoWarn>0169</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
   </PropertyGroup>
   <ItemGroup>
-	<Reference Include="System" />
+    <Reference Include="System" />
     <Reference Include="System.XML" />
-	<Reference Include="System.Core" />
-	<Reference Include="System.Xml.Linq" />
-	<Reference Include="UnityEngine">
-	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
-	</Reference>
-	<Reference Include="UnityEditor">
-	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
-	</Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\LightShafts\LightShafts.Resources.cs" />
-     <Compile Include="Assets\LightShafts\LightShafts.Utils.cs" />
-     <Compile Include="Assets\LightShafts\LightShafts.cs" />
-     <Compile Include="Assets\Scripts\Animation\Tets.cs" />
-     <Compile Include="Assets\Scripts\Behaviour\DoorBehaviour.cs" />
-     <Compile Include="Assets\Scripts\Behaviour\Key.cs" />
-     <Compile Include="Assets\Scripts\EndGame\EndGameHandling.cs" />
-     <Compile Include="Assets\Scripts\GameInfo.cs" />
-     <Compile Include="Assets\Scripts\GameManager.cs" />
-     <Compile Include="Assets\Scripts\GamePlayer.cs" />
-     <Compile Include="Assets\Scripts\Human\HumanController.cs" />
-     <Compile Include="Assets\Scripts\Interface\Chat.cs" />
-     <Compile Include="Assets\Scripts\Interface\ConnectionsBox.cs" />
-     <Compile Include="Assets\Scripts\Interface\GameMessages.cs" />
-     <Compile Include="Assets\Scripts\Interface\MessageFlow.cs" />
-     <Compile Include="Assets\Scripts\LevelManager.cs" />
-     <Compile Include="Assets\Scripts\MainMenu\Connecter.cs" />
-     <Compile Include="Assets\Scripts\Monsters\MaryControl.cs" />
-     <Compile Include="Assets\Scripts\NetworkMouseLook.cs" />
-     <Compile Include="Assets\Scripts\NetworkedFPSController.cs" />
-     <Compile Include="Assets\Scripts\PlayerControl.cs" />
-     <Compile Include="Assets\Scripts\PlayerInfo.cs" />
-     <Compile Include="Assets\Scripts\Pregame\Lobby.cs" />
-     <Compile Include="Assets\Scripts\Unused\Flashlight.cs" />
-     <Compile Include="Assets\VLights\Scripts\PostProcess\VLightInterleavedSampling.cs" />
-     <Compile Include="Assets\VLights\Scripts\Util\VLightGeometryUtil.cs" />
-     <Compile Include="Assets\VLights\Scripts\Util\VLightShaderUtil.cs" />
-     <Compile Include="Assets\VLights\Scripts\VLight\VLight.cs" />
-     <Compile Include="Assets\VLights\Scripts\VLight\VLightManager.cs" />
-     <None Include="Assets\LightShafts\SamplePositions.shader" />
-     <None Include="Assets\LightShafts\Shared.cginc" />
-     <None Include="Assets\LightShafts\Coord.shader" />
-     <None Include="Assets\VLights\Shaders\Light\Legacy\VolumeLight.shader" />
-     <None Include="Assets\VLights\Shaders\Light\VLightHelperPoint.cginc" />
-     <None Include="Assets\VLights\Shaders\PostProcess\VolumeLightInterleavedComposite.shader" />
-     <None Include="Assets\LightShafts\InterpolateAlongRays.shader" />
-     <None Include="Assets\VLights\Shaders\Light\VolumeLight Legacy.shader" />
-     <None Include="Assets\LightShafts\DepthBreaks.shader" />
-     <None Include="Assets\VLights\Shaders\Common\RenderDepth.shader" />
-     <None Include="Assets\VLights\Shaders\Light\VolumeLightDepth.shader" />
-     <None Include="Assets\VLights\Shaders\PostProcess\Blur.shader" />
-     <None Include="Assets\VLights\Readme.txt" />
-     <None Include="Assets\VLights\Shaders\Light\VolumeLightPoint Legacy.shader" />
-     <None Include="Assets\LightShafts\Raymarch.shader" />
-     <None Include="Assets\LightShafts\FinalInterpolation.shader" />
-     <None Include="Assets\LightShafts\Depth.shader" />
-     <None Include="Assets\VLights\Shaders\PostProcess\SimpleComposite.shader" />
-     <None Include="Assets\LightShafts\ColorFilter.shader" />
-     <None Include="Assets\VLights\Shaders\Light\Legacy\VolumeLightPoint.shader" />
-     <None Include="Assets\VLights\Shaders\Light\VLightHelper.cginc" />
- <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>F:/UnityProjects/DamnedRemake/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
- </Reference>
+    <Compile Include="Assets\LightShafts\LightShafts.Resources.cs" />
+    <Compile Include="Assets\LightShafts\LightShafts.Utils.cs" />
+    <Compile Include="Assets\LightShafts\LightShafts.cs" />
+    <Compile Include="Assets\Scripts\Animation\Tets.cs" />
+    <Compile Include="Assets\Scripts\Behaviour\DoorBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Behaviour\Key.cs" />
+    <Compile Include="Assets\Scripts\EndGame\EndGameHandling.cs" />
+    <Compile Include="Assets\Scripts\GameInfo.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\GamePlayer.cs" />
+    <Compile Include="Assets\Scripts\Human\HumanController.cs" />
+    <Compile Include="Assets\Scripts\Interface\Chat.cs" />
+    <Compile Include="Assets\Scripts\Interface\ConnectionsBox.cs" />
+    <Compile Include="Assets\Scripts\Interface\GameMessages.cs" />
+    <Compile Include="Assets\Scripts\Interface\MessageFlow.cs" />
+    <Compile Include="Assets\Scripts\LevelManager.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\Connecter.cs" />
+    <Compile Include="Assets\Scripts\Monsters\MaryControl.cs" />
+    <Compile Include="Assets\Scripts\NetworkMouseLook.cs" />
+    <Compile Include="Assets\Scripts\NetworkedFPSController.cs" />
+    <Compile Include="Assets\Scripts\PlayerControl.cs" />
+    <Compile Include="Assets\Scripts\PlayerInfo.cs" />
+    <Compile Include="Assets\Scripts\Pregame\Lobby.cs" />
+    <Compile Include="Assets\Scripts\Unused\Flashlight.cs" />
+    <Compile Include="Assets\Scripts\Util\UnityExtensions.cs" />
+    <Compile Include="Assets\VLights\Scripts\PostProcess\VLightInterleavedSampling.cs" />
+    <Compile Include="Assets\VLights\Scripts\Util\VLightGeometryUtil.cs" />
+    <Compile Include="Assets\VLights\Scripts\Util\VLightShaderUtil.cs" />
+    <Compile Include="Assets\VLights\Scripts\VLight\VLight.cs" />
+    <Compile Include="Assets\VLights\Scripts\VLight\VLightManager.cs" />
+    <None Include="Assets\LightShafts\SamplePositions.shader" />
+    <None Include="Assets\LightShafts\Shared.cginc" />
+    <None Include="Assets\LightShafts\Coord.shader" />
+    <None Include="Assets\VLights\Shaders\Light\Legacy\VolumeLight.shader" />
+    <None Include="Assets\VLights\Shaders\Light\VLightHelperPoint.cginc" />
+    <None Include="Assets\VLights\Shaders\PostProcess\VolumeLightInterleavedComposite.shader" />
+    <None Include="Assets\LightShafts\InterpolateAlongRays.shader" />
+    <None Include="Assets\VLights\Shaders\Light\VolumeLight Legacy.shader" />
+    <None Include="Assets\LightShafts\DepthBreaks.shader" />
+    <None Include="Assets\VLights\Shaders\Common\RenderDepth.shader" />
+    <None Include="Assets\VLights\Shaders\Light\VolumeLightDepth.shader" />
+    <None Include="Assets\VLights\Shaders\PostProcess\Blur.shader" />
+    <None Include="Assets\VLights\Readme.txt" />
+    <None Include="Assets\VLights\Shaders\Light\VolumeLightPoint Legacy.shader" />
+    <None Include="Assets\LightShafts\Raymarch.shader" />
+    <None Include="Assets\LightShafts\FinalInterpolation.shader" />
+    <None Include="Assets\LightShafts\Depth.shader" />
+    <None Include="Assets\VLights\Shaders\PostProcess\SimpleComposite.shader" />
+    <None Include="Assets\LightShafts\ColorFilter.shader" />
+    <None Include="Assets\VLights\Shaders\Light\Legacy\VolumeLightPoint.shader" />
+    <None Include="Assets\VLights\Shaders\Light\VLightHelper.cginc" />
+    <Reference Include="Assembly-UnityScript-firstpass">
+      <HintPath>F:/UnityProjects/DamnedRemake/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
-      <Project>{4C87F808-8586-9AB1-85A3-C3F102EDC877}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
+      <Project>{4C87F808-8586-9AB1-85A3-C3F102EDC877}</Project>
+      <Name>Assembly-CSharp-firstpass-vs</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -112,5 +116,4 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-  
 </Project>

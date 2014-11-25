@@ -4,17 +4,18 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using Assets.Scripts;
 using Assets.Scripts.GameObjects;
+using Assets.Scripts.Util;
 using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Baseclass for all player controlled objects - humans and monsters
+/// </summary>
 [RequireComponent(typeof(NetworkView))]
 [RequireComponent(typeof(NetworkedFPSController))]
 [RequireComponent(typeof(Chat))]
 public class PlayerControl : MonoBehaviour
 {
-    //exposed fields
-    //public float Speed = 5f;
-
     public List<Key> Keys;
 
     public NetworkPlayer TheOwner;
@@ -64,6 +65,22 @@ public class PlayerControl : MonoBehaviour
         }
         else
             ServerPlayMovementAnimations(hMove, vMove);
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            Collider hitCollider = UnityExtensions.ForwardRay(MainCamera.transform, 1f);
+
+            if (hitCollider.tag == "door")
+            {
+                var door = hitCollider.gameObject.GetComponent<DoorBehaviour>();
+
+                if (Network.isClient)
+                    door.networkView.RPC("S_Interact_Door", RPCMode.Server);
+                else
+                    door.S_Interact_Door();
+
+            }
+        }
     }
 
     [RPC]
